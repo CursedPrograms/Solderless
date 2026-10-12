@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solderless - a breadboard you play through</title>
+<meta name="description" content="Solderless: a virtual breadboard for guitar and violin pedals. Push in real parts, wire them up, and hear the circuit as you build it. VST3 and standalone. In planning.">
+<link rel="icon" href="site/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap">
+<link rel="stylesheet" href="site/style.css">
+<script src="site/site.js" defer></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="board" id="board" aria-hidden="true"></div>
+  <div class="masthead-text">
+    <h1>Solderless</h1>
+    <p class="subtitle">a breadboard you play through</p>
+    <p class="status">in planning</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <p class="lead">Push in resistors, caps, diodes, transistors and pots. Wire them up. Plug in your
+      guitar or violin and hear the circuit <b>while you build it</b>.</p>
+    <p>Like a real breadboard, nothing works until the circuit is complete. It runs on the circuit
+      solver from <a href="https://cursedprograms.github.io/Fuzz14/">Fuzz14</a>, which matches
+      ngspice to within 0.24 %. VST3 plugin + standalone app with ASIO.</p>
+  </section>
+
+  <section>
+    <h2>Like the real thing</h2>
+    <div class="cards">
+      <article class="card"><h3>No battery, no sound</h3><p>Forget the ground path and it's as dead as a real pedal.</p></article>
+      <article class="card"><h3>Floating legs</h3><p>A part with a leg in an empty row does nothing. Optional hint: a dim dot on the loose leg.</p></article>
+      <article class="card"><h3>Electrolytic backwards</h3><p>It works, with a slight crackle and a warning. A reversed battery: "you'd have cooked it".</p></article>
+      <article class="card"><h3>Short circuit</h3><p>The battery "smokes" and drains; pull the short and it recovers.</p></article>
+      <article class="card"><h3>Feedback</h3><p>Oscillators squeal and motorboat like real ones, behind a safety limiter for your ears.</p></article>
+      <article class="card"><h3>Footswitch</h3><p>True bypass: if the circuit isn't wired through, you hear your clean signal.</p></article>
+    </div>
+  </section>
+
+  <section>
+    <h2>The parts drawer</h2>
+    <p>Pedal parts only: resistors and pots (real knobs, turn them while you play), film, ceramic and
+      electrolytic caps, diodes (1N4148, germanium, Schottky, LEDs that light up), transistors
+      (2N3904, MPSA13, BC109, germanium PNP) and JFETs; later op-amps (TL072).</p>
+    <p>Every pot you place becomes a knob on a pedal-face panel you can automate in your DAW. Presets
+      are saved boards: Fuzz14 first, then the classics. Export the schematic and a parts list to
+      build it for real.</p>
+  </section>
+
+  <section>
+    <h2>The plan</h2>
+    <ol class="plan">
+      <li>The solver from Fuzz14, about ten times faster (a Big Muff has four transistors).</li>
+      <li>Board to netlist: holes become nodes, strips and wires join them.</li>
+      <li>Circuits that won't settle fade to silence instead of glitching.</li>
+      <li>The breadboard GUI: drag, drop, snap, wire, rotate.</li>
+      <li>The plugin shell, the pedal-face panel, presets, schematic export.</li>
+    </ol>
+    <p class="small">Follow it on <a href="https://github.com/CursedPrograms/Solderless">GitHub</a>.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="credit"><a href="https://farica-kimora.github.io/FaricaKimora/">Farica&#9734;Kimora</a> &copy; Cursed Entertainment</p>
+  <a class="studio" href="https://cursed-entertainment.itch.io/">
+    <img src="https://github.com/CursedPrograms/cursedentertainment/raw/main/images/logos/logo-wide-grey.png" alt="Cursed Entertainment" width="250">
+  </a>
+  <p class="small"><a href="https://github.com/CursedPrograms/Solderless">GitHub</a> &middot; MIT licence</p>
+</footer>
+
+</body>
+</html>

@@ -34,4 +34,4 @@ standalone with ASIO. Only pedal electronics in the parts drawer.
 - [ ] Presets, schematic export.
 
 ## Credits
-Farica☆Kimora  (c) Cursed Entertainment
+Farica☆Kimora © Cursed Entertainment
