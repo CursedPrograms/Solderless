@@ -19,12 +19,12 @@ standalone with ASIO. Only pedal electronics in the parts drawer.
   - feedback / oscillators squeal and motorboat like real ones, behind a safety limiter
 - Every pot on the board shows up as a knob on a pedal-face panel, automatable in the DAW.
 - Tuner and MIDI learn from Safety Pin / stringtuner.
-- Presets are saved boards: Buzz Fuzz (the 2014 breadboard fuzz) first, then Bazz Fuss, Fuzz Face, Tube Screamer
+- Presets are saved boards: Fuzz14 (the 2014 breadboard fuzz) first, then Bazz Fuss, Fuzz Face, Tube Screamer
   clipping stage, Big Muff stage, LPB-1.
 - Export the schematic and parts list to build it for real.
 
 ## Plan
-- [ ] Solver: copy the MNA solver from BuzzFuzz (matches ngspice within 0.13 %) and make it
+- [ ] Solver: copy the MNA solver from Fuzz14 (matches ngspice within 0.13 %) and make it
       ~10x faster (stamp the linear parts once, only redo nonlinear parts each Newton step;
       sparse LU) - a Big Muff has 4 transistors.
 - [ ] Netlist from the board: holes -> nodes (breadboard strips), wires join nodes.

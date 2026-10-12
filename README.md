@@ -8,7 +8,7 @@ ASIO.
 Farica☆Kimora  (c) Cursed Entertainment
 
 **Status: planning.** Nothing to download yet; the plan is in [TODO.md](TODO.md). It will run on
-the circuit solver from [BuzzFuzz](https://github.com/CursedPrograms/BuzzFuzz).
+the circuit solver from [Fuzz14](https://github.com/CursedPrograms/Fuzz14).
 
 ## License
 MIT, see [LICENSE](LICENSE).
