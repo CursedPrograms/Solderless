@@ -7,6 +7,12 @@ ASIO.
 
 **Website:** https://cursedprograms.github.io/Solderless/
 
+Part of [OctaviaVSTs](https://github.com/CursedPrograms/OctaviaVSTs), Cursed Entertainment's audio software.
+
+<div align="center">
+  <img src="images/solderless.png" alt="Solderless website" width="760"/>
+</div>
+
 [Farica☆Kimora](https://github.com/Farica-Kimora) © Cursed Entertainment
 
 **Status: planning.** Nothing to download yet; the plan is in [TODO.md](TODO.md). It will run on
